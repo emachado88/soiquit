@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/*
+ * Brand palette — keep in sync with ../../app/assets/css/main.css (root app).
+ * The landing is light-only by design; dark sections use --color-depth.
+ */
+@theme {
+  --color-primary: #1a6b5c;
+  --color-primary-hover: #2a8f7a;
+  --color-depth: #12504a;
+  --color-accent: #d4922a;
+  --color-subtle-fill: #e5a94a;
+  --color-primary-soft: #cee8e0;
+  --color-on-primary-soft: #08352c;
+  --color-accent-soft: #f5e8c8;
+  --color-danger: #d94f4f;
+  --color-danger-soft: #fce4e4;
+  --color-on-danger-soft: #601010;
+  --color-bg: #f7f6f3;
+  --color-surface: #ffffff;
+  --color-card: #f0eeea;
+  --color-border: #e2e0dc;
+  --color-muted: #6e6c6a;
+  --color-ink: #1c1b1a;
+
+  --font-display: "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+}
+
+/* Anchored sections clear the sticky header */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* Habits marquee — infinite scroll, pause on hover */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  animation: marquee 32s linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Hero phone float */
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.floaty {
+  animation: floaty 6s ease-in-out infinite;
+}
+
+/* FAQ accordion */
+details summary::-webkit-details-marker {
+  display: none;
+}
+details summary {
+  list-style: none;
+}
+details[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+.faq-chevron {
+  transition: transform 0.2s ease;
+}

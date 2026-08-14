@@ -1,0 +1,32 @@
+# dependencies
+node_modules/
+
+# Nuxt
+.nuxt/
+.output/
+.data/
+.nitro/
+dist/
+build/
+
+# local env files
+.env
+.env*.local
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# tests
+coverage/
+
+# typescript
+*.tsbuildinfo
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
