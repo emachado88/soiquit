@@ -1,7 +1,7 @@
 # So I Quit — Landing Page
 
 Marketing landing page for [So I Quit](https://github.com/emachado88/so-i-quit),
-the offline-first habit tracker. Built with **Nuxt 4** (SPA, `ssr: false`) +
+the offline-first habit tracker. Built with **Nuxt 4** +
 **Tailwind CSS v4**, deployed as a static site to **GitHub Pages**.
 
 - Live: <https://emachado88.github.io/soiquit/>
