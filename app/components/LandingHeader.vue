@@ -8,6 +8,7 @@ const links = [
 // Same favicon/logo mark as the app (copied from the root app's assets/).
 // baseURL is /so-i-quit/ on GitHub Pages — resolved via runtime config.
 const logoSrc = `${useRuntimeConfig().app.baseURL}icon.svg`
+const downloadURL = useRuntimeConfig().public.downloadURL
 </script>
 
 <template>
@@ -39,7 +40,7 @@ const logoSrc = `${useRuntimeConfig().app.baseURL}icon.svg`
       </nav>
 
       <a
-        href="#"
+        :href="downloadURL"
         class="rounded-full bg-primary px-4 py-2 text-sm font-bold text-white shadow-sm transition hover:bg-primary-hover"
       >
         Get the app

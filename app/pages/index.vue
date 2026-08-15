@@ -5,13 +5,6 @@
       <HeroSection />
       <TrustStrip />
       <HowItWorks />
-      <SignatureFeatures />
-      <FeatureGrid />
-      <HabitsMarquee />
-      <UnderTheHood />
-      <BigCta />
-      <FaqSection />
-      <FinalCta />
     </main>
     <LandingFooter />
   </div>

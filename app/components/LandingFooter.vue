@@ -39,7 +39,10 @@ const logoSrc = `${useRuntimeConfig().app.baseURL}icon.svg`
       </nav>
 
       <p class="text-xs text-muted">
-        © 2026 So I Quit. Free forever.
+        © 2026 <a
+          href="https://emachado.pt"
+          target="_blank"
+        >emachado.pt</a>.
       </p>
     </div>
   </footer>

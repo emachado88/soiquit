@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const downloadURL = useRuntimeConfig().public.downloadURL
+</script>
+
 <template>
   <section
     id="top"
@@ -20,7 +24,7 @@
           class="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-surface px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-widest text-primary shadow-sm"
         >
           <span class="h-1.5 w-1.5 rounded-full bg-accent" />
-          Free · No account · Offline-first
+          Free · Offline-first
         </p>
 
         <h1
@@ -37,11 +41,16 @@
         </p>
 
         <div class="mt-8 flex justify-center lg:justify-start">
-          <StoreBadges />
+          <a
+            :href="downloadURL"
+            class="rounded-full bg-primary px-4 py-2 text-sm font-bold text-white uppercase shadow-sm transition hover:bg-primary-hover"
+          >
+            Download the app
+          </a>
         </div>
 
         <p class="mt-6 text-sm font-semibold text-muted">
-          Works fully offline · Your data never leaves your phone
+          Works fully offline · Your data is yours · No ads
         </p>
       </div>
 

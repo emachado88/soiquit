@@ -39,6 +39,11 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/main.css'],
+  runtimeConfig: {
+    public: {
+      downloadURL: 'https://github.com/emachado88/so-i-quit/releases',
+    },
+  },
   compatibilityDate: '2026-08-10',
   // Stable output dir for the GitHub Pages workflow (landing/dist).
   nitro: {
