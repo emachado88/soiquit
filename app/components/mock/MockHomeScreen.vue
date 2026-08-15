@@ -100,7 +100,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="relative flex h-[540px] flex-col overflow-hidden text-ink sm:h-[580px]">
+  <div class="relative flex h-135 flex-col overflow-hidden text-ink sm:h-145">
     <!-- Status bar -->
     <div class="flex items-center justify-between text-[11px] font-bold text-ink/80">
       <span>9:41</span>

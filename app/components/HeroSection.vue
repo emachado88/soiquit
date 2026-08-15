@@ -9,10 +9,10 @@ const downloadURL = useRuntimeConfig().public.downloadURL
   >
     <!-- Soft brand backdrop -->
     <div
-      class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-primary-soft/70 via-bg to-bg"
+      class="pointer-events-none absolute inset-0 -z-10 bg-linear-to-b from-primary-soft/70 via-bg to-bg"
     />
     <div
-      class="pointer-events-none absolute -top-48 left-1/2 -z-10 h-[520px] w-[720px] -translate-x-1/2 rounded-full bg-primary/10 blur-3xl"
+      class="pointer-events-none absolute -top-48 left-1/2 -z-10 h-130 w-180 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl"
     />
 
     <div
