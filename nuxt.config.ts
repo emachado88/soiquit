@@ -6,10 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 const baseURL = process.env.NUXT_APP_BASE_URL || '/soiquit/'
 
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint'],
-  // Landing page — pure static SPA, deployed to GitHub Pages. The app itself
-  // stays untouched in the repo root (its webDir is Capacitor's).
-  ssr: false,
+  modules: ['@nuxt/fonts', '@nuxt/eslint'],
   // Clean component names regardless of subfolder (same convention as the app)
   components: [{ path: '~/components', pathPrefix: false }],
   app: {
