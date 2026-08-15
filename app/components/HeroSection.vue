@@ -40,6 +40,10 @@ const downloadURL = useRuntimeConfig().public.downloadURL
           ads. No judgment.
         </p>
 
+        <p class="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-muted lg:mx-0">
+          Currently supports 8 languages.
+        </p>
+
         <div class="mt-8 flex justify-center lg:justify-start">
           <a
             :href="downloadURL"
