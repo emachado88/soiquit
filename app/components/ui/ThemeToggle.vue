@@ -7,7 +7,7 @@ const { toggleTheme } = useThemeMode()
 <template>
   <button
     type="button"
-    class="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-surface text-muted shadow-sm transition hover:bg-card hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+    class="flex h-9 w-9 items-center justify-center cursor-pointer rounded-full border border-border bg-surface text-muted shadow-sm transition hover:bg-card hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
     aria-label="Toggle dark mode"
     @click="toggleTheme()"
   >
