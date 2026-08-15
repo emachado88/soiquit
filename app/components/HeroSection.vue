@@ -23,8 +23,8 @@ const downloadURL = useRuntimeConfig().public.downloadURL
         <p
           class="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-surface px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-widest text-primary shadow-sm"
         >
-          <span class="h-1.5 w-1.5 rounded-full bg-accent" />
-          Free · Offline-first
+          <span class="h-1.5 w-1.5 rounded-full bg-primary-hover" />
+          Free
         </p>
 
         <h1
@@ -43,13 +43,13 @@ const downloadURL = useRuntimeConfig().public.downloadURL
         <div class="mt-8 flex justify-center lg:justify-start">
           <a
             :href="downloadURL"
-            class="rounded-full bg-primary px-4 py-2 text-xl font-bold text-white uppercase shadow-sm transition hover:bg-primary-hover"
+            class="rounded-full bg-primary px-12 py-6 text-xl font-bold text-white uppercase tracking-wider shadow-sm transition hover:bg-primary-hover"
           >
-            Download the app
+            Download
           </a>
         </div>
 
-        <p class="mt-6 text-sm font-semibold text-muted">
+        <p class="mt-6 text-sm font-semibold text-ink">
           Works fully offline · Your data is yours · No ads
         </p>
       </div>

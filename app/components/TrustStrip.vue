@@ -20,7 +20,7 @@ const items = [
   {
     icon: ShieldCheck,
     title: 'Private by design',
-    text: 'Your data is yours to manage (backup/restore wherever you want)',
+    text: 'Your data is yours to manage, backup/restore whenever, wherever you want)',
   },
 ]
 </script>
