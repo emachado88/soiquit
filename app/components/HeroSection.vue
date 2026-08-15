@@ -61,7 +61,7 @@ const downloadURL = useRuntimeConfig().public.downloadURL
         />
         <div class="floaty">
           <PhoneFrame>
-            <MockProgress />
+            <MockHomeScreen />
           </PhoneFrame>
         </div>
       </div>
