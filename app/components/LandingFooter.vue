@@ -23,21 +23,6 @@ const logoSrc = `${useRuntimeConfig().app.baseURL}icon.svg`
         </div>
       </div>
 
-      <nav class="flex items-center gap-6 text-sm font-semibold text-muted">
-        <a
-          href="#how"
-          class="transition hover:text-primary"
-        >How it works</a>
-        <a
-          href="#features"
-          class="transition hover:text-primary"
-        >Features</a>
-        <a
-          href="#faq"
-          class="transition hover:text-primary"
-        >FAQ</a>
-      </nav>
-
       <p class="text-xs text-muted">
         © 2026 <a
           href="https://emachado.pt"

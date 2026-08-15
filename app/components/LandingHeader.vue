@@ -1,8 +1,6 @@
 <script setup lang="ts">
 const links = [
   { href: '#how', label: 'How it works' },
-  { href: '#features', label: 'Features' },
-  { href: '#faq', label: 'FAQ' },
 ]
 
 // Same favicon/logo mark as the app (copied from the root app's assets/).
