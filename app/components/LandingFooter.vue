@@ -11,7 +11,7 @@ const logoSrc = `${useRuntimeConfig().app.baseURL}icon.svg`
         <img
           :src="logoSrc"
           alt=""
-          class="h-7 w-7 rounded-md"
+          class="h-8 w-8 rounded-md"
         >
         <div class="leading-tight">
           <p class="text-sm font-extrabold tracking-tight">
