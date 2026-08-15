@@ -1,5 +1,37 @@
 <script setup lang="ts">
 const downloadURL = useRuntimeConfig().public.downloadURL
+
+const phoneAnchor = ref<HTMLElement | null>(null)
+const mockVisible = ref(false)
+
+onMounted(() => {
+  const target = phoneAnchor.value
+  if (!target)
+    return
+
+  // Mount the animated phone mock only once ≥80% of it is on screen, so its
+  // entrance animations play in view instead of below the fold. Fall back to
+  // immediate mount when IO is unavailable or motion is reduced (the mock
+  // disables its animations under reduced motion anyway).
+  if (
+    !('IntersectionObserver' in window)
+    || window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  ) {
+    mockVisible.value = true
+    return
+  }
+
+  const io = new IntersectionObserver(
+    ([entry]) => {
+      if (entry?.isIntersecting) {
+        mockVisible.value = true
+        io.disconnect()
+      }
+    },
+    { threshold: 0.8 },
+  )
+  io.observe(target)
+})
 </script>
 
 <template>
@@ -63,9 +95,18 @@ const downloadURL = useRuntimeConfig().public.downloadURL
         <div
           class="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/15 blur-2xl"
         />
-        <div class="floaty">
+        <div
+          ref="phoneAnchor"
+          class="floaty"
+        >
           <PhoneFrame>
-            <MockHomeScreen />
+            <MockHomeScreen v-if="mockVisible" />
+            <!-- Reserve the mock's exact height (mirrors MockHomeScreen.vue's
+                 root: h-135 sm:h-145) so the hero doesn't collapse pre-mount -->
+            <div
+              v-else
+              class="h-135 sm:h-145"
+            />
           </PhoneFrame>
         </div>
       </div>
