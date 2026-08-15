@@ -54,7 +54,7 @@ const steps = [
             {{ step.n }}
           </span>
           <span
-            class="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-soft text-primary"
+            class="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-soft text-primary dark:text-white"
           >
             <component
               :is="step.icon"

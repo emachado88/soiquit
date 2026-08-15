@@ -43,7 +43,7 @@ const downloadURL = useRuntimeConfig().public.downloadURL
         <div class="mt-8 flex justify-center lg:justify-start">
           <a
             :href="downloadURL"
-            class="rounded-full bg-primary px-4 py-2 text-sm font-bold text-white uppercase shadow-sm transition hover:bg-primary-hover"
+            class="rounded-full bg-primary px-4 py-2 text-xl font-bold text-white uppercase shadow-sm transition hover:bg-primary-hover"
           >
             Download the app
           </a>

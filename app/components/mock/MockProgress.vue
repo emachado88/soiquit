@@ -97,7 +97,7 @@ const logoSrc = `${useRuntimeConfig().app.baseURL}icon.svg`
     </div>
 
     <!-- Live counter -->
-    <div class="rounded-2xl border border-border bg-white p-4 shadow-sm">
+    <div class="rounded-2xl border border-border bg-surface p-4 shadow-sm">
       <p class="text-[10px] font-bold uppercase tracking-widest text-muted">
         Since you quit
       </p>
@@ -111,7 +111,7 @@ const logoSrc = `${useRuntimeConfig().app.baseURL}icon.svg`
     </div>
 
     <!-- Milestone ring -->
-    <div class="flex items-center gap-4 rounded-2xl border border-border bg-white p-4 shadow-sm">
+    <div class="flex items-center gap-4 rounded-2xl border border-border bg-surface p-4 shadow-sm">
       <svg
         viewBox="0 0 80 80"
         class="h-16 w-16 shrink-0"
@@ -178,7 +178,7 @@ const logoSrc = `${useRuntimeConfig().app.baseURL}icon.svg`
 
     <!-- Habit chip -->
     <div
-      class="flex items-center justify-between rounded-2xl border border-border bg-white px-3 py-2.5 shadow-sm"
+      class="flex items-center justify-between rounded-2xl border border-border bg-surface px-3 py-2.5 shadow-sm"
     >
       <div class="flex items-center gap-2">
         <span
@@ -194,7 +194,7 @@ const logoSrc = `${useRuntimeConfig().app.baseURL}icon.svg`
         </div>
       </div>
       <span
-        class="rounded-full bg-accent-soft px-2 py-0.5 text-[10px] font-bold text-amber-900"
+        class="rounded-full bg-accent-soft px-2 py-0.5 text-[10px] font-bold text-amber-900 dark:text-accent"
       >
         🔥 128 days
       </span>

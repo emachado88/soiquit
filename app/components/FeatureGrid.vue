@@ -58,7 +58,7 @@ const features = [
           class="rounded-2xl border border-border bg-surface p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5"
         >
           <span
-            class="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-soft text-amber-900"
+            class="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-soft text-amber-900 dark:text-accent"
           >
             <component
               :is="feature.icon"

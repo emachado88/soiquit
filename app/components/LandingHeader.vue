@@ -37,12 +37,15 @@ const downloadURL = useRuntimeConfig().public.downloadURL
         </a>
       </nav>
 
-      <a
-        :href="downloadURL"
-        class="rounded-full bg-primary px-4 py-2 text-sm font-bold text-white shadow-sm transition hover:bg-primary-hover"
-      >
-        Get the app
-      </a>
+      <div class="flex items-center gap-3">
+        <ThemeToggle />
+        <a
+          :href="downloadURL"
+          class="rounded-full bg-primary px-4 py-2 text-sm font-bold text-white shadow-sm transition hover:bg-primary-hover"
+        >
+          Get the app
+        </a>
+      </div>
     </div>
   </header>
 </template>

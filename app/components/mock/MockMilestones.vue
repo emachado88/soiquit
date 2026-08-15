@@ -17,17 +17,17 @@ const rows = [
       <p class="text-lg leading-none">
         🎉
       </p>
-      <p class="mt-1 text-xs font-extrabold text-amber-900">
+      <p class="mt-1 text-xs font-extrabold text-amber-900 dark:text-accent">
         You did it!
       </p>
-      <p class="text-[11px] font-medium text-amber-900/70">
+      <p class="text-[11px] font-medium text-amber-900/70 dark:text-accent/70">
         1 year free — celebrated
       </p>
     </div>
 
     <!-- Milestone ring -->
     <div
-      class="flex flex-col items-center rounded-2xl border border-border bg-white p-4 shadow-sm"
+      class="flex flex-col items-center rounded-2xl border border-border bg-surface p-4 shadow-sm"
     >
       <svg
         viewBox="0 0 120 120"
@@ -82,7 +82,7 @@ const rows = [
     </div>
 
     <!-- Milestone list -->
-    <div class="space-y-1.5 rounded-2xl border border-border bg-white p-3 shadow-sm">
+    <div class="space-y-1.5 rounded-2xl border border-border bg-surface p-3 shadow-sm">
       <div
         v-for="row in rows"
         :key="row.label"

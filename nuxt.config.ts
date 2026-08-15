@@ -36,6 +36,14 @@ export default defineNuxtConfig({
         },
       ],
       link: [{ rel: 'icon', type: 'image/svg+xml', href: `${baseURL}icon.svg` }],
+      script: [
+        {
+          // Pre-paint theme (FOUC guard). Keep STORAGE_KEY in sync with
+          // app/composables/useThemeMode.ts.
+          innerHTML:
+            '(function(){try{var t=localStorage.getItem(\'theme\');var d=t===\'dark\'||(t===null&&matchMedia(\'(prefers-color-scheme: dark)\').matches);document.documentElement.classList.toggle(\'dark\',d)}catch(e){}})()',
+        },
+      ],
     },
   },
   css: ['~/assets/css/main.css'],

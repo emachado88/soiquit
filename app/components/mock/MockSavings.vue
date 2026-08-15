@@ -9,7 +9,7 @@ const breakdown = [
 <template>
   <div class="space-y-3 text-ink">
     <!-- Total savings -->
-    <div class="rounded-2xl border border-border bg-white p-4 shadow-sm">
+    <div class="rounded-2xl border border-border bg-surface p-4 shadow-sm">
       <p class="text-[10px] font-bold uppercase tracking-widest text-muted">
         Total saved
       </p>
@@ -22,7 +22,7 @@ const breakdown = [
     </div>
 
     <!-- Breakdown -->
-    <div class="rounded-2xl border border-border bg-white p-4 shadow-sm">
+    <div class="rounded-2xl border border-border bg-surface p-4 shadow-sm">
       <p class="text-[10px] font-bold uppercase tracking-widest text-muted">
         Where it comes from
       </p>

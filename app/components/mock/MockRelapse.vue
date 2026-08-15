@@ -1,7 +1,7 @@
 <template>
   <div class="space-y-3 text-ink">
     <!-- Habit card -->
-    <div class="rounded-2xl border border-border bg-white p-4 shadow-sm">
+    <div class="rounded-2xl border border-border bg-surface p-4 shadow-sm">
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-2">
           <span
@@ -47,7 +47,7 @@
     </div>
 
     <!-- Small reassurance row -->
-    <div class="flex items-center gap-2 rounded-2xl border border-border bg-white px-3 py-2.5 shadow-sm">
+    <div class="flex items-center gap-2 rounded-2xl border border-border bg-surface px-3 py-2.5 shadow-sm">
       <span
         class="text-base"
         aria-hidden="true"

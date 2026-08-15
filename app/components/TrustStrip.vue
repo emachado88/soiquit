@@ -36,7 +36,7 @@ const items = [
         class="flex items-start gap-3.5"
       >
         <span
-          class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary-soft text-primary"
+          class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary-soft text-primary dark:text-white"
         >
           <component
             :is="item.icon"
