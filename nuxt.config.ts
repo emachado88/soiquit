@@ -15,6 +15,8 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'en' },
       title: 'So I Quit — quit a habit, watch the savings grow',
       meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           name: 'description',
           content:

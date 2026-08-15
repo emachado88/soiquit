@@ -44,7 +44,7 @@ const features = [
 <template>
   <section
     id="features"
-    class="bg-surface py-20 sm:py-24"
+    class="overflow-hidden bg-surface py-20 sm:py-24"
   >
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
       <SectionHeading
