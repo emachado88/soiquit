@@ -59,6 +59,10 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [tailwindcss()],
+    server: {
+      // Allow ngrok-free.app hosts in dev so the tunnel works.
+      allowedHosts: ['.ngrok-free.app'],
+    },
   },
   eslint: { config: { stylistic: true } },
   fonts: {
